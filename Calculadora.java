@@ -28,6 +28,11 @@ public class Calculadora implements Icalculadora, Pila < Double > {
      */
     public Calculadora() {}
 
+    
+    /** 
+     * @param input
+     * @return double
+     */
     @Override
     public double resolver(String input) {
         String[] comandos = input.split(" ");
@@ -68,26 +73,46 @@ public class Calculadora implements Icalculadora, Pila < Double > {
         return pop();
     }
 
+    
+    /** 
+     * @return boolean
+     */
     @Override
     public boolean empty() {
         return stack.empty();
     }
 
+    
+    /** 
+     * @return int
+     */
     @Override
     public int size() {
         return stack.size();
     }
 
+    
+    /** 
+     * @param item
+     */
     @Override
     public void push(Double item) {
         stack.push(item);
     }
 
+    
+    /** 
+     * @return Double
+     */
     @Override
     public Double pop() {
         return stack.pop();
     }
 
+    
+    /** 
+     * @return Double
+     */
     @Override
     public Double peek() {
         return stack.peek();
