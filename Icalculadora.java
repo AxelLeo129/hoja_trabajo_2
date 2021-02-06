@@ -9,5 +9,9 @@
  * @author Mejia
  */
 public interface Icalculadora {
+    /**
+     * @param input ingresa el string con la linea a operar
+     * @return devuelve la solucion de la linea a operar
+     */
     public double resolver(String input);
 }

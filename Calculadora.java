@@ -8,6 +8,11 @@ import java.util.Stack;
 
 import java.lang.NumberFormatException;
 
+/**
+ * @author Axel Lopez
+ * @author Luis Pedro Gonzalez
+ *
+ */
 public class Calculadora implements Icalculadora, Pila < Double > {
 
     private Stack < Double > stack = new Stack < Double > ();
@@ -18,6 +23,9 @@ public class Calculadora implements Icalculadora, Pila < Double > {
         "/"
     };
 
+    /**
+     * Constructor vacio
+     */
     public Calculadora() {}
 
     @Override

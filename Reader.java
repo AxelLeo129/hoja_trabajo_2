@@ -2,8 +2,14 @@ import java.io.*;
 
 public class Reader {
     
+    /**
+     * Constructor vacio
+     */
     public Reader() {}
 
+    /**
+     * @return devuelve la linea escrita en el txt 
+     */
     public String readFile() {
         File archivo = null;
         FileReader fr = null;
