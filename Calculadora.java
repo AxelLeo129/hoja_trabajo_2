@@ -42,7 +42,7 @@ public class Calculadora implements Icalculadora, Pila < Double > {
                     try {
                         push(Double.parseDouble(comandos[i]));
                     } catch(NumberFormatException e) {
-                        System.out.println("El achivo '.txt' no tiene el formato necesario.");
+                        System.out.println("El achivo '.txt' no tiene el formato correcto");
                         return Double.NaN;
                     }
                 } else {
@@ -64,7 +64,7 @@ public class Calculadora implements Icalculadora, Pila < Double > {
                         }
                         push(resultado);
                     } else {
-                        System.out.println("El achivo '.txt' no tiene el formato necesario.");
+                        System.out.println("El achivo '.txt' no tiene el formato correcto.");
                         return Double.NaN;
                     }
                 }
